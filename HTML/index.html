@@ -290,14 +290,14 @@
 
 			<div class="slide">
 				<img src="files/AKSW-logo-200.png" style="float:right;"></img>
-				<h2>Task 0: Describe Your Computer in RDF</h2>
+				<h2>Task 2: Describe Your Computer in RDF</h2>
 				<h3 style="text-align: left;">Example</h3>
 				<img src="files/MyComputer.svg"></img>
 			</div>
 			
 			<div class="slide">
 				<img src="files/AKSW-logo-200.png" style="float:right;"></img>
-				<h2>Task 0: Describe Your Computer in RDF</h2>
+				<h2>Task 2: Describe Your Computer in RDF</h2>
 				<h3 style="text-align: left;">Example</h3>
 				<pre>
 @base &lt;http://iermilov.aksw.org/MyComputer#> .
@@ -312,10 +312,10 @@
 			
 			<div class="slide">
 				<img src="files/AKSW-logo-200.png" style="float:right;"></img>
-				<h2>Task 0: Describe Your Computer in RDF</h2>
+				<h2>Task 2: Describe Your Computer in RDF</h2>
 				<h3 style="text-align: left;">Task</h3>
 				<ul>
-					<li>Create 20 triples about your computer in N3 notation (30 minutes)</li>
+					<li>Create 20 triples about your computer in N3 notation</li>
 					<li><a href="http://www.w3.org/2000/10/swap/Primer.html">N3 Primer</a></li>
 					<li><a href="">RDF Specification</a></li>
 				</ul>
@@ -323,14 +323,14 @@
 			
 			<div class="slide">
 				<img src="files/AKSW-logo-200.png" style="float:right;"></img>
-				<h2>Task 0a: Make an RDFS Description For Your Data</h2>
+				<h2>Task 2a: Make an RDFS Description For Your Data</h2>
 				<h3 style="text-align: left;">Example</h3>
 				<img src="files/Ontology.svg"></img>
 			</div>			
 			
 			<div class="slide">
 				<img src="files/AKSW-logo-200.png" style="float:right;"></img>
-				<h2>Task 0a: Make an RDFS Description For Your Data</h2>
+				<h2>Task 2a: Make an RDFS Description For Your Data</h2>
 				<h3 style="text-align: left;">Example</h3>
 				<pre>
 @base &lt;http://iermilov.aksw.org/MyComputer> .
@@ -359,7 +359,7 @@ OS a rdfs:Class .
 			
 			<div class="slide">
 				<img src="files/AKSW-logo-200.png" style="float:right;"></img>
-				<h2>Task 0a: Make an RDFS Description For Your Data</h2>
+				<h2>Task 2a: Make an RDFS Description For Your Data</h2>
 				<h3 style="text-align: left;">Example</h3>
 				<pre>
 @base &lt;http://iermilov.aksw.org/MyComputer#> .
@@ -382,7 +382,7 @@ os_installed a rdf:Property ;
 				
 			<div class="slide">
 				<img src="files/AKSW-logo-200.png" style="float:right;"></img>
-				<h2>Task 0a: Making new datatype</h2>
+				<h2>Task 2a: Making new datatype</h2>
 				<h3 style="text-align: left;">Example</h3>
 				<pre>
 @base &lt;http://iermilov.aksw.org/MyComputer#> .
@@ -408,7 +408,7 @@ GHz a rdf:Property ;
 
 			<div class="slide">
 				<img src="files/AKSW-logo-200.png" style="float:right;"></img>
-				<h2>Task 0a: Make an RDFS Description For Your Data</h2>
+				<h2>Task 2a: Make an RDFS Description For Your Data</h2>
 				<h3 style="text-align: left;">RDFS Utility Vocabulary</h3>
 				<ul>
 					<li>rdfs:seeAlso</li>
@@ -437,14 +437,34 @@ Ubuntu1204 rdfs:comment "Ubuntu is the most popular Linux OS."@en .
 			
 			<div class="slide">
 				<img src="files/AKSW-logo-200.png" style="float:right;"></img>
-				<h2>Task 0a: Make an RDFS Description For Your Data</h2>
+				<h2>Task 2a: Make an RDFS Description For Your Data</h2>
 				<h3 style="text-align: left;">Task</h3>
 				<ul>
-					<li>Make RDFS ontology for your data (30 minutes)</li>
+					<li>Make RDFS ontology for your data</li>
 					<li><a href="http://www.w3.org/2000/10/swap/Primer.html">N3 Primer</a></li>
 					<li><a href="">RDF Specification</a></li>
 					<li><a href="">RDFS Specification</a></li>
 				</ul>
+			</div>
+			
+			<div class="slide">
+				<img src="files/AKSW-logo-200.png" style="float:right;"></img>
+				<h2>Task 2a: Interlink Your Ontology with dbpedia.org</h2>
+				<h3 style="text-align: left;">Example</h3>
+				<ul>
+				<li><a href="http://dbpedia.org/fct/">Lookup entity with fulltext search</a></li>
+				<li>dbpedia: = http://dbpedia.org/resource/</li>
+				<li>dbpedia:Operation_system = http://dbpedia.org/resource/Operation_system</li>
+				<pre>
+@prefix dbpedia: &lt;http://dbpedia.org/resource/> . 					
+					
+OS a rdfs:Class ;
+   rdfs:sameAs dbpedia:Operation_system .
+				</pre>
+				</ul>
+				<!-- Speaker's notes:
+				rdfs:Class is by default a sub-class of rdfs:Resource
+				-->
 			</div>
 			
 		<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
